@@ -1,7 +1,7 @@
-/* ─── Fonts ─────────────────────────────────────────────────────────── */
+/*Fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-/* ─── Tokens ─────────────────────────────────────────────────────────── */
+/* Tokens*/
 :root {
   --bg:             #f6f6f5;
   --surface:        #ffffff;
@@ -41,7 +41,7 @@
   --ease: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ─── Reset ──────────────────────────────────────────────────────────── */
+/*Reset*/
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -53,7 +53,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ─── App Shell ──────────────────────────────────────────────────────── */
+/* App Shell*/
 .app {
   display: flex;
   min-height: 100vh;
@@ -61,9 +61,7 @@ body {
 }
 @keyframes appIn { from { opacity:0 } to { opacity:1 } }
 
-/* ═══════════════════════════════════════════════════════════════════════
-   SIDEBAR
-═══════════════════════════════════════════════════════════════════════ */
+/*SIDEBAR*/
 .sidebar {
   width: 228px;
   position: sticky;
@@ -142,16 +140,14 @@ body {
   flex-shrink: 0;
 }
 
-/* ─── Main ───────────────────────────────────────────────────────────── */
+/* Main */
 .main {
   flex: 1;
   padding: 36px 44px;
   min-width: 0;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
-   CARD
-═══════════════════════════════════════════════════════════════════════ */
+/*CARD*/
 .card {
   background: var(--surface);
   padding: 22px 26px;
@@ -181,9 +177,7 @@ body {
   margin-bottom: 16px;
 }
 
-/* ═══════════════════════════════════════════════════════════════════════
-   STAT CARDS
-═══════════════════════════════════════════════════════════════════════ */
+/*STAT CARD*/
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -283,7 +277,7 @@ body {
 .stat-card.converted .stat-label::before { background: var(--green); box-shadow: 0 0 5px rgba(22,163,74,0.45); }
 .stat-card.converted .stat-number    { color: var(--green); }
 
-/* ─── Form Row ───────────────────────────────────────────────────────── */
+/*  Form Row  */
 .form-row {
   display: flex;
   gap: 10px;
@@ -291,7 +285,7 @@ body {
   flex-wrap: wrap;
 }
 
-/* ─── Inputs ─────────────────────────────────────────────────────────── */
+/*  Inputs  */
 .input {
   padding: 8px 11px;
   border-radius: var(--r-sm);
@@ -312,7 +306,7 @@ body {
   box-shadow: 0 0 0 3px rgba(13,13,12,0.09);
 }
 
-/* ─── Buttons ────────────────────────────────────────────────────────── */
+/*  Buttons  */
 .btn-primary {
   background: var(--accent);
   color: #fff;
@@ -355,7 +349,7 @@ body {
 }
 .btn-danger:active { transform: scale(0.97); }
 
-/* ─── Controls ───────────────────────────────────────────────────────── */
+/*  Controls  */
 .controls {
   display: flex;
   gap: 10px;
@@ -363,7 +357,7 @@ body {
   align-items: center;
 }
 
-/* ─── Table ──────────────────────────────────────────────────────────── */
+/*  Table  */
 .table { width: 100%; border-collapse: collapse; }
 
 .table thead tr { border-bottom: 1px solid var(--border-strong); }
@@ -390,7 +384,7 @@ body {
 .table tbody tr:hover { background: var(--surface-hover); }
 .table tbody tr:last-child td { border-bottom: none; }
 
-/* ─── Status Select ──────────────────────────────────────────────────── */
+/*  Status Select  */
 .status-select {
   padding: 5px 10px;
   border-radius: var(--r-sm);
@@ -404,7 +398,7 @@ body {
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
 }
 
-/* ─── Notes Section ──────────────────────────────────────────────────── */
+/*  Notes Section  */
 .notes-section {
   background: var(--bg);
   border: 1px solid var(--border);
