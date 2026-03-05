@@ -63,7 +63,7 @@ npm install
 
 Create a `.env` file inside the `backend` folder and add:
 
-MONGO_URI=mongodb+srv://nehasolai:MongoDb4@cluster0.shzjtfn.mongodb.net/miniCRM?appName=Cluster0
+MONGO_URI=mongodb+srv://nehasolai:*********.shzjtfn.mongodb.net/miniCRM?appName=Cluster0
 
 Start the backend server:
 
